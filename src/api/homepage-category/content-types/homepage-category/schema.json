@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepage_categories",
+  "info": {
+    "singularName": "homepage-category",
+    "pluralName": "homepage-categories",
+    "displayName": "Homepage Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "rowType": {
+      "type": "enumeration",
+      "enum": [
+        "Movies",
+        "Shows"
+      ]
+    },
+    "sortOrder": {
+      "type": "integer"
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video",
+      "mappedBy": "homepage_category"
+    }
+  }
+}
