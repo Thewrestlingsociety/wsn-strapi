@@ -1,10 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const config = {
+exports.default = {
     rest: {
         defaultLimit: 25,
         maxLimit: 100,
-        withCount: true,
-    },
+        withCount: true
+    }
 };
-exports.default = config;

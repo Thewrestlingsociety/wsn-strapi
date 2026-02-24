@@ -1,15 +1,9 @@
 export default ({ env }) => ({
   connection: {
-    client: 'postgres',
+    client: "sqlite",
     connection: {
-      connectionString: env('DATABASE_URL'),
-      ssl: env.bool('DATABASE_SSL', true)
-        ? { rejectUnauthorized: false }
-        : false,
+      filename: env("DATABASE_FILENAME", ".tmp/data.db"),
     },
-    pool: {
-      min: env.int('DATABASE_POOL_MIN', 0),
-      max: env.int('DATABASE_POOL_MAX', 10),
-    },
+    useNullAsDefault: true,
   },
 });
