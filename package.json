@@ -15,7 +15,8 @@
     "@strapi/plugin-i18n": "^4.0.0",
     "@strapi/plugin-cloud": "^4.0.0",
     "@strapi/provider-upload-local": "^4.0.0",
-    "@strapi/provider-upload-aws-s3": "^4.0.0"
+    "@strapi/provider-upload-aws-s3": "^4.0.0",
+    "ajv": "^8.12.0"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
