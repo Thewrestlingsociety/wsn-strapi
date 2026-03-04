@@ -16,12 +16,17 @@
     "@strapi/plugin-cloud": "4.26.1",
     "@strapi/provider-upload-local": "4.26.1",
     "@strapi/provider-upload-aws-s3": "4.26.1",
+
     "pg": "^8.11.5",
+
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "5.3.4",
+
     "ajv": "^8.12.0",
-    "ajv-draft-04": "^1.0.0"
+    "ajv-draft-04": "^1.0.0",
+
+    "esbuild": "^0.21.5"
   },
   "engines": {
     "node": ">=20.0.0 <21",
